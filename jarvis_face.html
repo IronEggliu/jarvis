@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jarvis_leanrning</title>
+    <style>
+      body {
+        margin: 0px;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .shadow_border {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .flex {
+        display: flex;
+      }
+      .white_border {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .margin8_border {
+        margin: 8px;
+      }
+      .margin28_border_right {
+        margin-right: 28px;
+      }
+      .margin8_border_header {
+        margin-top: 8px;
+      }
+      .navigation {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(190, 190, 190);
+        font-size: 14px;
+        color: #666;
+      }
+      @media (max-width: 600px) {
+        .side {
+          display: none;
+        }
+        .content {
+          flex-direction: column;
+        }
+        .data_region {
+          flex-direction: column;
+        }
+        .left_region {
+          margin-left: 8px;
+        }
+        .data_blocks {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
+      .content::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2" class="white_border shadow_border">
+      <!-- 头像栏 -->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img src="photo/ml.png" alt="头像" width="40px" height="40px" />
+        <div style="margin-left: 10px">Jarvis</div>
+      </div>
+      <!-- 导航栏 -->
+      <div class="flex1">
+        <div class="navigation">导航</div>
+        <div class="navigation">导航</div>
+        <div class="navigation">导航</div>
+        <div class="navigation">导航</div>
+        <div class="navigation">导航</div>
+        <div class="navigation">导航</div>
+      </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+      <!-- 头部栏 -->
+      <div
+        style="height: 60px; z-index: 1"
+        class="white_border shadow_border"
+      ></div>
+      <!-- 内容区 -->
+      <div style="overflow: auto" class="content flex1 flex">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column margin8_border">
+          <!-- 数据区 -->
+          <div class="data_region flex">
+            <!-- 数据块 -->
+            <div
+              style="height: 100px"
+              class="data_blocks flex1 white_border shadow_border margin8_border"
+            ></div>
+            <!-- 数据块 -->
+            <div
+              style="height: 100px"
+              class="data_blocks flex1 white_border shadow_border margin8_border"
+            ></div>
+            <!-- 数据块 -->
+            <div
+              style="height: 100px"
+              class="data_blocks flex1 white_border shadow_border margin8_border"
+            ></div>
+            <!-- 数据块 -->
+            <div
+              style="height: 100px"
+              class="data_blocks flex1 white_border shadow_border margin8_border"
+            ></div>
+          </div>
+          <!-- 列表区 -->
+          <div class="flex column">
+            <!-- 列表项 -->
+            <div
+              style="height: 200px"
+              class="white_border shadow_border margin8_border"
+            ></div>
+            <!-- 列表项 -->
+            <div
+              style="height: 200px"
+              class="white_border shadow_border margin8_border"
+            ></div>
+            <!-- 列表项 -->
+            <div
+              style="height: 200px"
+              class="white_border shadow_border margin8_border"
+            ></div>
+            <!-- 列表项 -->
+            <div
+              style="height: 200px"
+              class="white_border shadow_border margin8_border"
+            ></div>
+            <!-- 列表项 -->
+            <div
+              style="height: 200px"
+              class="white_border shadow_border margin8_border"
+            ></div>
+            <!-- 列表项 -->
+            <div
+              style="height: 200px"
+              class="white_border shadow_border margin8_border"
+            ></div>
+            <!-- 列表项 -->
+            <div
+              style="height: 200px"
+              class="white_border shadow_border margin8_border"
+            ></div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div
+          style="flex: 1"
+          class="left_region flex column margin8_border margin8_border_header"
+        >
+          <!-- 提示区 -->
+          <div
+            style="height: 150px; background-color: white"
+            class="flex column shadow_border"
+          ></div>
+          <!-- 消息区 -->
+          <div
+            style="height: 300px; background-color: white"
+            class="flex column margin8_border_header shadow_border"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
